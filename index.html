@@ -324,6 +324,58 @@
                 font-size: 1.5rem !important;
             }
         }
+
+        /* Mobile adjustments for timeline */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .left,
+            .right {
+                left: 0 !important;
+            }
+
+            .timeline-item::after {
+                left: 15px !important;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px !important;
+                right: initial !important;
+            }
+
+            .timeline-content {
+                padding: 15px 20px;
+            }
+
+            .timeline-content > div:first-child {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .timeline-content > div:first-child > div:first-child {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.125rem;
+            }
+
+            .timeline-content p {
+                font-size: 0.875rem;
+                line-height: 1.4;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
